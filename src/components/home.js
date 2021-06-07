@@ -9,9 +9,9 @@ export default class Home extends React.Component {
         return (
             <div id="home" className="home">
                 <div className="paddTop">
-                    <img className='logo' src={logo} />
+                    <img className='logo' alt='sp' src={logo} />
                     <a href="#nav">
-                        <img className='drop' src={drop} />
+                        <img className='drop' alt='sp' src={drop} />
                     </a>
                 </div>
             </div>

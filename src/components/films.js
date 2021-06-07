@@ -1,4 +1,7 @@
 import React from 'react'
+import shears from '../images/shears.jpg'
+import jewel from '../images/the_jewel.jpg'
+import bridge from '../images/bridge.jpg'
 import '../css'
 
 export default class Films extends React.Component {
@@ -6,15 +9,22 @@ export default class Films extends React.Component {
     render() {
         return (
             <div id="films" className="screen">
-                <p>What is Lorem Ipsum?
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was popularised in
-                the 1960s with the release of Ltraset sheets containing Lorem Ipsum passages
-                , and more recently with desktop publishing software like Aldus PageMaker
-                including versions of Lorem Ipsum.</p>
+          
+                
+
+                <div className="row">
+                    <div className="column item-zoom">
+                        <img src={shears} alt='sp' />
+                    </div>
+                    <div className="column item-zoom">
+                        <img src={jewel}  alt='sp' />
+                    </div>
+                    <div className="column item-zoom">
+                        <img src={bridge}  alt='sp' />
+                    </div>
+                </div>
+
+
             </div>
         );
     }

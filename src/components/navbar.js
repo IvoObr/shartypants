@@ -16,7 +16,7 @@ export default class Navbar extends React.Component {
                 </ul>
 
                 <a href="#home">
-                    <img className='smlogo' src={logo} />
+                    <img className='smlogo' alt='sp' src={logo} />
                 </a>
             </div >
          
