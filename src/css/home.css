@@ -1,0 +1,28 @@
+.logo {
+    border-radius: 40%;
+    max-width: 35%;
+    margin: auto;
+    height: auto;
+    display: block;
+}
+
+.paddTop {
+ padding-top: 8%;
+}
+
+.drop {
+    height: 10%;
+    width: 10%;
+}
+
+.drop:hover {
+    width: 11%;
+    cursor: pointer;
+}
+
+.home {
+    background-image: url('../images/backdround.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}

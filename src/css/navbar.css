@@ -1,0 +1,36 @@
+
+.smlogo {
+    border-radius: 40%;
+    max-width: 4%;
+    /* margin: auto;
+    height: auto; */
+    margin-top: 0.5em;
+    left: 48%;
+    position: absolute; 
+}
+
+.ulmenu {
+    list-style-type: none;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 0%;  
+}
+
+#nav {
+  background-color:black;
+  height: 4em;
+}
+
+.hrzLi {
+   font-size: 1.1em;
+   float: left;
+   color: darkgrey;
+   margin-left: 1em;
+   padding-top: 1em;
+}
+
+.hrzLi:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
