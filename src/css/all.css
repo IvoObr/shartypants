@@ -1,3 +1,18 @@
 .screen {
     height: 100vh;
 }
+
+.header {
+    font-weight: 200;
+    padding: 1em;
+    font-size: 4em;
+
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
