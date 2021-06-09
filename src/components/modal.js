@@ -53,7 +53,7 @@ export default class Modal extends React.Component {
                         
                         <section className="container">
                             <div className="one" dangerouslySetInnerHTML={{ __html: this.props.text.p3 }}></div>
-                            <div className="two" >{this.props.video}</div>
+                            <div className="two" dangerouslySetInnerHTML={{ __html: this.props.video }}></div>
                         </section>
                
 
