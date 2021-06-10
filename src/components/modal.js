@@ -13,6 +13,7 @@ export default class Modal extends React.Component {
         
         document.querySelectorAll('iframe').forEach(iframe => {
             iframe.classList.add('block');
+            iframe.classList.remove('none');
         });
     }
 
@@ -24,6 +25,7 @@ export default class Modal extends React.Component {
         document.querySelectorAll('iframe').forEach(iframe => {
             iframe.src = iframe.src;
             iframe.classList.add('none');
+            iframe.classList.remove('block');
         });
 
         document.querySelectorAll('video').forEach(video => video.pause());

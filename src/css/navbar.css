@@ -1,12 +1,15 @@
 
 .smlogo {
-    border-radius: 40%;
+    border-radius: 50%;
     max-width: 4%;
     /* margin: auto;
     height: auto; */
     margin-top: 0.5em;
     left: 48%;
     position: absolute; 
+     -webkit-box-shadow: -0px 0px 12px 12px #000000, 0px 0px 12px 0px #FFFFFF;
+      box-shadow: -0px 0px 12px 12px #000000, 0px 0px 12px 0px #FFFFFF
+
 }
 
 .ulmenu {
@@ -18,19 +21,26 @@
 
 #nav {
   background-color:black;
-  height: 4em;
-}
+  height: 3em;
+  -webkit-box-shadow: -0px 0px 12px 12px #000000, 0px 0px 8px 8px #FFFFFF;
+  box-shadow: -0px 0px 12px 12px #000000, 0px 0px 8px 8px #FFFFFF
+} 
 
 .hrzLi {
    font-size: 1.1em;
    float: left;
    color: darkgrey;
    margin-left: 1em;
-   padding-top: 1em;
+   padding-top: 0.8em;
+   color: #fff;
+   -webkit-text-shadow:  0 0 5px #fff;
+   text-shadow: 0 0 5px #fff;
 }
 
 .hrzLi:hover {
   color: white;
   text-decoration: underline;
   cursor: pointer;
+   -webkit-text-shadow: 0 0 5px #fff;
+   text-shadow: 0 0 5px #fff;
 }

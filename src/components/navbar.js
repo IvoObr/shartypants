@@ -1,6 +1,8 @@
 import '../css'
 import React from 'react'
 import logo from '../images/logo.jpg'
+import smlogo from '../images/smlogo.jpg'
+
 
 export default class Navbar extends React.Component {
     render() {
@@ -12,7 +14,7 @@ export default class Navbar extends React.Component {
                     <a href="#about"> <li className='hrzLi'>About</li> </a>
                     <a href="#contacts">  <li className='hrzLi'>Contacts</li> </a>
                 </ul>
-                <a href="#home"><img className='smlogo' alt='sp' src={logo} />  </a>
+                <a href="#home"><img className='smlogo' alt='sp' src={smlogo} />  </a>
             </div>
         );
     }
