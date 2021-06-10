@@ -1,7 +1,7 @@
+import '../css'
 import React from 'react'
 import logo from '../images/logo.jpg'
 import drop from '../images/drop.png'
-import '../css'
 
 export default class Home extends React.Component {
 

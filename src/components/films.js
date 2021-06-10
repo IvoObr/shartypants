@@ -1,67 +1,57 @@
-import React from 'react'
-import shearsImg from '../images/shears.jpg'
-import jewel from '../images/the_jewel.jpg'
-import Modal from './modal'
-import { shears} from '../content'
 import '../css'
+import React from 'react'
+import Modal from './modal'
+import { shears } from '../content'
+import jewel from '../images/the_jewel.jpg'
+import shearsImg from '../images/shears.jpg'
 
 export default class Films extends React.Component {
 
-    text = shears.text;
-
-    header = shears.header
-    video = shears.video
-
-    modal2 = React.createRef();
-
     constructor(props) {
-         
-      super(props);
-      this.state = {
-        showModal: false
-      };
+        super(props);
 
-        this.openModal = this.openModal.bind(this);
-   }
+        this.state = {
+            text: '',
+            video: '',
+            header: '',
+            out: false,
+            showModal: false,
+        };
 
-   openModal() { // TODO pass {{shears}} to open modal !!!!!!!!!!!!!!!
-      this.setState({showModal: true });
+        this.modal = React.createRef();
     }
 
-    render() {
+    openModal(movie) {
+        this.setState({
+            showModal: true,
+            text: movie.text,
+            video: movie.video,
+            header: movie.header,
+        })
+    }
 
+    render() { 
         return (
             <div id="films" className="screen">
-
-                <h1 className="header">
-                    FILMS</h1>
-
+                <h1 className="header"> FILMS</h1>
                 <div className="row">
                     <div className="column item-zoom">
-                        <img src={shearsImg}
-                            alt='sp'
-                            onClick={this.openModal} />
+                        <img src={shearsImg} alt='sp'
+                            onClick={() => this.openModal(shears)} />
                     </div>
                     <div className="column item-zoom">
-                        <img src={jewel}
-                            alt='sp' />
+                        <img src={jewel} alt='sp' />
                     </div>
-
                 </div>
-
                 <Modal
-                    ref={this.modal2}
-                    onClick={this.modal2.current?.open()}
+                    ref={this.modal}
+                    out={this.state.out}
+                    text={this.state.text}
+                    video={this.state.video}
+                    header={this.state.header}
                     showModal={this.state.showModal}
-                    out={false}
-                    text={this.text}
-                    header={this.header}
-
-                    video={this.video} />
-
+                    onClick={this.modal?.current?.open()} />
             </div>
-
-
-        );;
+        );
     }
 }
