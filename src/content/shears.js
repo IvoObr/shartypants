@@ -22,6 +22,6 @@ export const shears = {
                <a href="http://www.imdb.com/title/tt7999930/" target="_blank">IMDb&nbsp;</a> `
     },
     header: 'SHEARS',
-    video: `<iframe src="https://www.youtube.com/embed/c5Sbd_jqIAk" frameborder="" allowfullscreen="" title='vid' ></iframe>`
+    video: `<iframe class="mid-vid" src="https://www.youtube.com/embed/c5Sbd_jqIAk" frameborder="" allowfullscreen="" title='vid' ></iframe>`
 }
 

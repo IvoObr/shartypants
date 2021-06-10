@@ -1,9 +1,8 @@
 import '../css'
 import React from 'react'
 import Modal from './modal'
-import { shears, jewel } from '../content'
-import shearsImg from '../images/shears.jpg'
-import jewelImg from '../images/the_jewel.jpg'
+import { shears, jewel, noplace } from '../content'
+import { shearsImg, jewelImg, noplaceImg } from '../images'
 
 export default class Films extends React.Component {
 
@@ -30,18 +29,24 @@ export default class Films extends React.Component {
         })
     }
 
-    render() { 
+    render() {
+        noplace.video = `<img class="sm-img" src=${noplaceImg} alt='sp'/>`
+
         return (
             <div id="films" className="screen">
                 <h1 className="header">FILMS</h1>
                 <div className="row">
                     <div className="column item-zoom">
+                        <img src={noplaceImg} alt='sp'
+                            onClick={() => this.openModal(noplace)} />
+                    </div>
+                    <div className="column item-zoom">
                         <img src={shearsImg} alt='sp'
-                            onClick={() => this.openModal(shears)}/>
+                            onClick={() => this.openModal(shears)} />
                     </div>
                     <div className="column item-zoom">
                         <img src={jewelImg} alt='sp'
-                            onClick={() => this.openModal(jewel)}/>
+                            onClick={() => this.openModal(jewel)} />
                     </div>
                 </div>
                 <Modal

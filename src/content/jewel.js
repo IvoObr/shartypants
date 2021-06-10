@@ -18,6 +18,6 @@ export const jewel = {
               <a href="http://www.imdb.com/title/tt7998218/" target="_blank">IMDb</a>`
     },
     header: 'The Jewel (2016)',
-    video: `<iframe src="https://www.youtube.com/embed/7Kp4sKoVuxk" frameborder="0" allowfullscreen=""></iframe>`
+     video: `<iframe class="mid-vid" src="https://www.youtube.com/embed/7Kp4sKoVuxk" frameborder="0" allowfullscreen=""></iframe>`
 }
 

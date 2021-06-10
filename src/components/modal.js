@@ -8,9 +8,27 @@ export default class Modal extends React.Component {
         this.state = { out: props.out };
     }
 
-    open = () => this.setState({ out: false })
-    close = () => this.setState({ out: true })
+    open = () => {
+        this.setState({ out: false })
+        
+        document.querySelectorAll('iframe').forEach(iframe => {
+            iframe.classList.add('block');
+        });
+    }
+
     preventCLose = (event) => event.stopPropagation();
+
+    close = () => {
+        this.setState({ out: true })
+       
+        document.querySelectorAll('iframe').forEach(iframe => {
+            iframe.src = iframe.src;
+            iframe.classList.add('none');
+        });
+
+        document.querySelectorAll('video').forEach(video => video.pause());
+
+    }
 
     render() {
         const modalInner = React.createRef();

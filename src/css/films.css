@@ -6,16 +6,25 @@
   display: flex;
 }
 
+.sm-img {
+	width: 60%;
+	height: 60%;
+}
+
+.mid-vid {
+    width: 24em;
+	height: 14em;
+}
+
 .column {
-  flex: 20%;
-   margin: 5em 8em;
-    height: 100%;
+   flex: 20%;
+   margin: 2em;
+   height: 100%;
 }
 
 .item-zoom {
 	position: relative;
 	overflow: hidden;
-	width: 30%;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
