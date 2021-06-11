@@ -33,13 +33,14 @@
    margin-left: 1em;
    padding-top: 0.8em;
    color: #fff;
-   -webkit-text-shadow:  0 0 5px #fff;
-   text-shadow: 0 0 5px #fff;
+   /* -webkit-text-shadow:  0 0 5px #fff; */
+   /* text-shadow: 0 0 5px #fff; */
 }
 
 .hrzLi:hover {
   color: white;
   text-decoration: underline;
+  text-decoration-thickness: 1%;
   cursor: pointer;
    -webkit-text-shadow: 0 0 5px #fff;
    text-shadow: 0 0 5px #fff;

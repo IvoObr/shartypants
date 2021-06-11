@@ -1,6 +1,6 @@
- /* POLYGON START */
+ /* POLYGON SLICE START */
 
-.image-wrapper {
+/* .image-wrapper {
 	 width: 600px;
 	 height: 400px;
 	 position: relative;
@@ -45,9 +45,9 @@
 	 clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
 	 transition: transform 300ms ease;
 	 transform: translate(-32px, 5px);
-}
+} */
  
- /* POLYGON END */
+ /* POLYGON SLICE END */
 
 
 
