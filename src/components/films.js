@@ -35,7 +35,7 @@ export default class Films extends React.Component {
         return (
             <div id="films" className="screen">
                 <h1 className="header">FILMS</h1>
-                <div className="row">
+                {/* <div className="row">
                     <div className="column item-zoom">
                         <img src={noplaceImg} alt='sp'
                             onClick={() => this.openModal(noplace)} />
@@ -48,7 +48,31 @@ export default class Films extends React.Component {
                         <img src={jewelImg} alt='sp'
                             onClick={() => this.openModal(jewel)} />
                     </div>
-                </div>
+                </div> */}
+
+                <figure className="snip1482 " onClick={() => this.openModal(noplace)}>
+                    <figcaption>
+                        <h2>{noplace.header}</h2>
+                        {/* <p>{noplace.header}</p> */}
+                    </figcaption>
+                    <img src={noplaceImg} alt="sample45" />
+                </figure>
+                <figure className="snip1482 " onClick={() => this.openModal(shears)}>
+                    <figcaption>
+                        <h2>{shears.header}</h2>
+                        {/* <p>{shears.header}</p> */}
+                    </figcaption>
+                   <img src={shearsImg} alt="sample59" />
+                </figure>
+                <figure className="snip1482 " onClick={() => this.openModal(jewel)}>
+                    <figcaption>
+                        <h2>{jewel.header}</h2>
+                        {/* <p>{jewel.header}</p> */}
+                    </figcaption>
+                    <img src={jewelImg} alt="sample60" />
+                </figure>
+
+       
                 <Modal
                     ref={this.modal}
                     out={this.state.out}
