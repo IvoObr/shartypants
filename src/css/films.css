@@ -28,6 +28,7 @@
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	border-radius: 1%;
 
 
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
