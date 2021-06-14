@@ -10,6 +10,10 @@
 }
 
 
+.single{
+	margin-bottom: 0.3em;
+}
+
 .container {
   width: 45%;
   /* height: 200px; */
@@ -22,6 +26,7 @@
   width: 45%;
   /* height: 200px; */
   /* background: red; */
+  text-align: left;
   float: left;
 }
 
@@ -33,17 +38,26 @@
 
 .modal3 {
 	width: 60%;
-}
+	overflow: scroll;
+	-ms-overflow-style: none; 
+    scrollbar-width: none;  
+} 
+
+.modal3::-webkit-scrollbar {
+  display: none;
+} 
+
 
 .close {
 	padding: 0,5em;
 }
 
- html.modal-active3, body.modal-active3 {
+ /* html.modal-active3, body.modal-active3 {
 	 overflow: hidden;
-}
- #modal-container3 {
+} */
 
+
+ #modal-container3 {
 	 position: fixed;
 	 display: table;
 	 height: 100%;
