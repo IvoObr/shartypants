@@ -1,5 +1,5 @@
 import './index.css';
-import { Navbar, Home, Films } from './components'
+import { Navbar, Home, Films, Videos } from './components'
 
 function App() {
   return (
@@ -12,7 +12,11 @@ function App() {
 
       <Home />
       <Navbar />
+      
       <Films />
+      <br /><br /><br /><br />
+      <Videos />
+
     </div>
   );
 }

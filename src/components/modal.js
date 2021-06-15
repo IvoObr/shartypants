@@ -8,29 +8,45 @@ export default class Modal extends React.Component {
         this.state = { out: props.out };
     }
 
-    open = () => {
-        this.setState({ out: false })
-        
-        document.querySelectorAll('iframe').forEach(iframe => {
-            iframe.classList.add('block');
-            iframe.classList.remove('none');
-        });
+    player() {
+        let instance = null;
+
+        function iframe(show) {
+            return {
+                display() {
+                    document.querySelectorAll('iframe').forEach(iframe => {
+                        instance = iframe;
+                        instance.src = iframe.src;
+                        if (show === 'block') {
+                            instance.classList.add('block')
+                            instance.classList.remove('none');
+                        }
+                        instance.classList.add('none')
+                        instance.classList.remove('block');
+                    })
+                }
+            }
+        }
+
+        return {
+            pause() { document.querySelectorAll('video').forEach(video => video.pause()) },
+            show() { iframe().display('block'); return this },
+            hide() { iframe().display('none'); return this }
+        }
     }
 
-    preventCLose = (event) => event.stopPropagation();
+    open = () => {
+        this.setState({ out: false })
+        this.player().show().pause()
+    }
+
 
     close = () => {
         this.setState({ out: true })
-       
-        document.querySelectorAll('iframe').forEach(iframe => {
-            iframe.src = iframe.src;
-            iframe.classList.add('none');
-            iframe.classList.remove('block');
-        });
-
-        document.querySelectorAll('video').forEach(video => video.pause());
-
+        this.player().hide().pause()
     }
+
+    preventCLose = (event) => event.stopPropagation();
 
     render() {
         const modalInner = React.createRef();

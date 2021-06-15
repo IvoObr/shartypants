@@ -1,13 +1,17 @@
-import navbar from './navbar.css'
+import all from './all.css'
 import home from './home.css'
 import films from './films.css'
-import all from './all.css'
 import modal from './modal.css'
+import navbar from './navbar.css'
+import videos from './videos.css'
+import * as animations from './animations'
 
 export {
-    navbar,
-    home,
-    films,
     all,
-    modal
+    home,
+    modal,
+    films,
+    videos,
+    navbar,
+    animations
 }
