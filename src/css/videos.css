@@ -6,7 +6,14 @@
     /* text-align: center; */
 }
 
-.floatL{
-    float: left;
-    margin-left: 5em;
+.colTwo {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.gridTwoCol:after {
+  content: "";
+  display: table;
+  clear: both;
 }

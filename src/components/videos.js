@@ -7,22 +7,18 @@ export default class Videos extends React.Component {
         return (
             <div id="videos" className="screen">
                 <h1 className="header">VIDEOS</h1>
-                {/* <div className="floatL"> */}
-                <div className="floatL">
-                    <div className="gradient-border">
+                <div className="gridTwoCol">
+                    <div className=" colTwo">
                         <p dangerouslySetInnerHTML={{ __html: vick.video }}></p>
+                        <p className="videoInfo" dangerouslySetInnerHTML={{ __html: vick.header }}></p>
+                        <p className="videoInfo" dangerouslySetInnerHTML={{ __html: vick.text.p1 }}></p>
                     </div>
-                    <p className="videoInfo" dangerouslySetInnerHTML={{ __html: vick.header }}></p>
-                    <p className="videoInfo" dangerouslySetInnerHTML={{ __html: vick.text.p1 }}></p>
-                </div>
-                <div className="floatL">
-                    <div className="gradient-border">
+                    <div className=" colTwo">
                         <p dangerouslySetInnerHTML={{ __html: character.video }}></p>
+                        <p className="videoInfo" dangerouslySetInnerHTML={{ __html: character.header }}></p>
+                        <p className="videoInfo" dangerouslySetInnerHTML={{ __html: character.text.p1 }}></p>
                     </div>
-                    <p className="videoInfo" dangerouslySetInnerHTML={{ __html: character.header }}></p>
-                    <p className="videoInfo" dangerouslySetInnerHTML={{ __html: character.text.p1 }}></p>
                 </div>
-                {/* </div> */}
             </div>
         );
     }

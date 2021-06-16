@@ -5,6 +5,6 @@ export const character = {
         p3: ``
     },
     header: "Cool Den - Характер",
-    video: '<iframe  class="big-vid" src="https://www.youtube.com/embed/4-hUhFkDW5c" frameborder="0" allowfullscreen=""  title="vid"></iframe>'
+    video: '<iframe  class="mid-vid" src="https://www.youtube.com/embed/4-hUhFkDW5c" frameborder="0" allowfullscreen=""  title="vid"></iframe>'
 }
 
