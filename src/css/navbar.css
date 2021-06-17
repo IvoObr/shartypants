@@ -8,27 +8,28 @@
 
 #nav {
   background-color:black;
-  height: 3.5em;
+  height: 3em;
   -webkit-box-shadow: -0px 0px 20px 2px #000000, 0px 0px 8px 3px #FFFFFF;
   box-shadow: -0px 0px 20px 2px #000000, 0px 0px 8px 3px #FFFFFF;
 } 
 
 .hrzLi {
-   font-size: 1.1em;
+   font-size: 0.8em;
    float: left;
    color: darkgrey;
    margin-left: 1em;
-   padding-top: 0.8em;
+   padding-top: 1em;
    color: #fff;
    /* -webkit-text-shadow:  0 0 5px #fff; */
    /* text-shadow: 0 0 5px #fff; */
 }
 
-.hrzLi:hover {
+/* .hrzLi:hover {
   color: white;
-  text-decoration: underline;
-  text-decoration-thickness: 1%;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom: 2px solid #FFFFFF;
   cursor: pointer;
    -webkit-text-shadow: 0 0 5px #fff;
    text-shadow: 0 0 5px #fff;
-}
+} */
