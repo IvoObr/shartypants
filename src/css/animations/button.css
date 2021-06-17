@@ -1,13 +1,10 @@
 .draw-borders {
-	 color: #58afd1;
-	 transition: color 0.55s 0.1833333333s;
 	 position: relative;
      padding-right: 2px;
      padding-left: 2em;
 }
  .draw-borders::before {
 	 border: 0 solid transparent;
-	 box-sizing: border-box;
 	 content: '';
 	 pointer-events: none;
 	 position: absolute;
@@ -19,9 +16,7 @@
  .draw-borders::before {
 	 border-bottom-width: 2px;
 }
- .draw-borders:hover {
-	 color: #ffe593;
-}
+
  .draw-borders:hover::before {
 	 border-color: #ffe593;
 	 transition: border-color 0s, width 0.55s, height 0.55s;
