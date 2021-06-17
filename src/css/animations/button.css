@@ -1,10 +1,10 @@
-.draw-borders {
+.draw-borderes {
 	 position: relative;
      padding-right: 2px;
      padding-left: 2em;
 }
- .draw-borders::before {
-	 border: 0 solid transparent;
+ .draw-borderes::before {
+	 border: 0 solid;
 	 content: '';
 	 pointer-events: none;
 	 position: absolute;
@@ -13,20 +13,19 @@
 	 bottom: 0;
 	 right: 0;
 }
- .draw-borders::before {
+ .draw-borderes::before {
 	 border-bottom-width: 2px;
 }
 
- .draw-borders:hover::before {
+ .draw-borderes:hover::before {
 	 border-color: #ffe593;
-	 transition: border-color 0s, width 0.55s, height 0.55s;
+	 transition: border-color 0s, width 0.55s;
 	 width: 60%;
-	 height: 100%;
 }
- .draw-borders:hover::before {
-	 transition-delay: 0s, 0s, 0.55s;
-}
- .btoon {
+
+ .btoonn {
+	 display: inline-block;
+	 border: none !important;
 	 background: none;
 	 border: none;
      font-weight: 600;

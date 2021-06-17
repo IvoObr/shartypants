@@ -6,18 +6,18 @@ export default class Navbar extends React.Component {
         return (
             <div id='nav' className='sticky-top'>
                 <ul className='ulmenu'>
-                    <button class="btoon draw-borders">
-                        <a href="#films"> <li className='hrzLi'>FILMS</li></a>
-                    </button>
-                    <button class="btoon draw-borders">
-                        <a href="#videos">  <li className='hrzLi'>VIDEOS</li></a>
-                    </button>
-                    <button class="btoon draw-borders">
-                        <a href="#about"> <li className='hrzLi'>ABOUT</li></a>
-                    </button>
-                    <button class="btoon draw-borders">
-                        <a href="#contacts">  <li className='hrzLi'>CONTACT</li></a>
-                    </button>
+                    <a href="#films"> <span className="btoonn draw-borderes">
+                        <li className='hrzLi'>FILMS</li> </span>
+                    </a>
+                    <a href="#videos"> <span className="btoonn draw-borderes">
+                        <li className='hrzLi'>VIDEOS</li> </span>
+                    </a>
+                    <a href="#about">  <span className="btoonn draw-borderes">
+                        <li className='hrzLi'>ABOUT</li> </span>
+                    </a>
+                    <a href="#contacts">  <span className="btoonn draw-borderes">
+                        <li className='hrzLi'>CONTACT</li> </span>
+                    </a>
                 </ul>
             </div>
         );
