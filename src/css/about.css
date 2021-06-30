@@ -1,6 +1,48 @@
 .textCol {
     margin: auto;
-    max-width: 50em;
+    max-width: 50%;
+    padding-bottom: 1em;
+}
+
+.aboutCol {
+    margin: auto;
+    float: left;
+    width: 40%;
+    height: 40%;
+}
+
+.people {
+    margin-top: 3em;
+}
+
+.h2sm {
+    text-align: left;
+    float: right;
+    display: block;
+    display: -webkit-box;
+    max-width: calc(40%);
+    height: 14.2em;
+    margin: 0 auto;
+    font-size: 1em;
+    line-height: 1.2em;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cen {
+    text-align: right;
+}
+
+.name {
+    margin-right: 0;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+    /* margin: 0 auto; */
+    text-align: right;
+
+    
 }
 
 #about {
@@ -13,9 +55,11 @@
 }
 
 .photo {
-    margin: 0 5em 5em 3em;
+    margin: 0 0 5em 3em;
     width: 13em;
     height: 13em;
     border-radius: 45%;
     object-fit: cover;
+    float: left;
+    margin-right: 2em;
 }
