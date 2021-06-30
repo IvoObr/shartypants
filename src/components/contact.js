@@ -6,7 +6,7 @@ import { facebook } from '../images'
 export default class Contact extends React.Component {
     render() {
         return (
-            <div className="screen bottomH">
+            <div className="screen">
                 <h1 id="contacts" className="header">Contact</h1>
                 <p className="textCol">{contact.text.p1}</p>
                 <p className="textCol">{contact.text.p2}</p>

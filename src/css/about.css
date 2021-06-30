@@ -3,6 +3,19 @@
     max-width: 50em;
 }
 
-.textP {
-    padding-top: 5em;
+#about {
+    padding-bottom: 1em !important;
+}
+
+.aboutScreen {
+    display: block;
+    overflow: auto;
+}
+
+.photo {
+    margin: 0 5em 5em 3em;
+    width: 13em;
+    height: 13em;
+    border-radius: 45%;
+    object-fit: cover;
 }

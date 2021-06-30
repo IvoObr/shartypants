@@ -16,9 +16,7 @@ export default class Home extends React.Component {
                         <div className="glitch__item"></div>
                         <a href="#nav">
                             {/* 
-                            
                             POLYGON
-                            
                             <div className="image-wrapper drop">
                                 <img className="image-1" alt="drop" src={drop} />
                                 <img className="image-2" alt="drop" src={drop} />
