@@ -1,4 +1,4 @@
-.smallIcon{
+.smallIcon {
     width: 2em;
 }
 
@@ -6,4 +6,16 @@
     margin: 5em auto;
     padding: 2em;
     line-height: 2em;
+}
+
+.fblogo  {
+    width: 2.5em;
+}
+
+.padd {
+    padding-top: 2em;
+}
+
+.bottom-content {
+    margin-top: 5em;
 }

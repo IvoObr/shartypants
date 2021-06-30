@@ -1,6 +1,6 @@
-
 .row {
-  display: flex;
+	display: flex;
+	margin: 0 auto;
 }
 
 .sm-img {
@@ -10,34 +10,42 @@
 
 .big-vid {
 	width: 12em !important;
-    height: 7em !important; 
-} 
+	height: 7em !important;
+}
+
+.film {
+	width: 28%;
+	height: auto;
+	margin: 0 auto;
+}
 
 .mid-vid {
-   width: 24em;
-   height: 14em;
-   border-radius: 1%;
-   -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-   -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	width: 24em;
+	height: 14em;
+	border-radius: 1%;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .column {
-   flex: 20%;
-   margin: 2em;
-   height: 100%;
+	flex: 20%;
+	margin: 2em;
+	height: 100%;
 }
 
 .item-zoom {
+	margin-bottom: 5em;
+	height: 20%;
 	position: relative;
 	overflow: hidden;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border-radius: 1%;
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .item-zoom img {
@@ -55,14 +63,10 @@
 	cursor: pointer;
 }
 
- 
 /* Clear floats after image containers */
- .row::after {
-  content: "";
-  clear: both;
-  display: table;
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
 }
-
-
-
-

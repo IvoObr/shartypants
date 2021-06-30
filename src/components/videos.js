@@ -5,8 +5,8 @@ import { vick, character } from '../content'
 export default class Videos extends React.Component {
     render() {
         return (
-            <div id="videos" className="screen">
-                <h1 className="header">VIDEOS</h1>
+            <div className="screen">
+                <h1 id="videos" className="topV header">VIDEOS</h1>
                 <div className="gridTwoCol">
                     <div className=" colTwo">
                         <p dangerouslySetInnerHTML={{ __html: vick.video }}></p>

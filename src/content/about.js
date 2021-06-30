@@ -6,7 +6,7 @@ export const about = {
         p3: `The filmmaking duo loves painting with light and roaming places where the good stories live.
 `
     },
-    header: "About",
+    header: "About Us",
     video: ''
 }
 

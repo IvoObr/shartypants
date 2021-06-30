@@ -5,7 +5,7 @@ export const contact = {
         p3: `Or check out some of our footage in 
         <a href="https://www.pond5.com/artist/smartypantsshooter" target="_blank" rel="noopener noreferrer">Pond5</a>.`
     },
-    header: "About",
+    header: "About Us",
     video: ''
 }
 

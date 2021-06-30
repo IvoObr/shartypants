@@ -1,4 +1,8 @@
 .textCol {
-    margin: auto; 
-   max-width: 50em;
+    margin: auto;
+    max-width: 50em;
+}
+
+.textP {
+    padding-top: 5em;
 }

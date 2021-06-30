@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  cursor: url(./images/oth708.cur),auto;
+  /* cursor: url(./images/oth708.cur),auto; */
 }
 
 .App-logo {

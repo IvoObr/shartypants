@@ -12,25 +12,19 @@
 	 height: 0;
 	 bottom: 0;
 	 right: 0;
-}
- .draw-borderes::before {
-	 border-bottom-width: 2px;
-}
+	 border-bottom-width: 2.3px;
+}	
 
  .draw-borderes:hover::before {
-	 border-color: #ffe593;
+	 border-color: #ffe593; /* #ffff; */
 	 transition: border-color 0s, width 0.55s;
 	 width: 60%;
 }
 
  .btoonn {
-	 display: inline-block;
-	 border: none !important;
-	 background: none;
-	 border: none;
-     font-weight: 600;
-	 cursor: pointer;
-	 line-height: 1em;
-     padding-bottom: 0.5em;
-	 letter-spacing: 0.05rem;
+     display: inline-block;
+	 /* font-size: 1.1em; */
+     font-weight: 700;
+     padding-bottom: 0.3em;
+	 letter-spacing: 0.08rem;
 }

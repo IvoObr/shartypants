@@ -33,55 +33,34 @@ export default class Films extends React.Component {
         noplace.video = `<img class="sm-img" src=${noplaceImg} alt='sp'/>`
 
         return (
-            <div id="films" className="screen">
-                <h1 className="header">FILMS</h1>
-                {/* <div className="row">
-                    <div className="column item-zoom">
+            <div className="screen">
+                <div className="center">
+                    <h1 id="films" className="header">FILMS</h1>
+                </div>
+
+                <div className="row">
+                    <div className="film item-zoom">
                         <img src={noplaceImg} alt='sp'
                             onClick={() => this.openModal(noplace)} />
                     </div>
-                    <div className="column item-zoom">
+                    <div className="film item-zoom">
                         <img src={shearsImg} alt='sp'
                             onClick={() => this.openModal(shears)} />
                     </div>
-                    <div className="column item-zoom">
+                    <div className="film item-zoom">
                         <img src={jewelImg} alt='sp'
                             onClick={() => this.openModal(jewel)} />
                     </div>
-                </div> */}
+                </div>
 
-                <figure className="snip1482 " onClick={() => this.openModal(noplace)}>
-                    <figcaption>
-                        <h2>{noplace.header}</h2>
-                        {/* <p>{noplace.header}</p> */}
-                    </figcaption>
-                    <img src={noplaceImg} alt="sample45" />
-                </figure>
-                <figure className="snip1482 " onClick={() => this.openModal(shears)}>
-                    <figcaption>
-                        <h2>{shears.header}</h2>
-                        {/* <p>{shears.header}</p> */}
-                    </figcaption>
-                   <img src={shearsImg} alt="sample59" />
-                </figure>
-                <figure className="snip1482 " onClick={() => this.openModal(jewel)}>
-                    <figcaption>
-                        <h2>{jewel.header}</h2>
-                        {/* <p>{jewel.header}</p> */}
-                    </figcaption>
-                    <img src={jewelImg} alt="sample60" />
-                </figure>
-
-       
-                <Modal
-                    ref={this.modal}
+                < Modal ref={this.modal}
                     out={this.state.out}
                     text={this.state.text}
                     video={this.state.video}
                     header={this.state.header}
                     showModal={this.state.showModal}
                     onClick={this.modal?.current?.open()} />
-            </div>
+            </div >
         );
     }
 }

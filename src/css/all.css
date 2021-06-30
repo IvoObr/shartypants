@@ -3,19 +3,22 @@
 }
 
 .halfScreen {
-        height: 50vh;
+    height: 50vh;
+}
 
+.topV  {
+    margin-top: 3em;
 }
 
 .header {
     font-weight: 200;
-    padding: 1em;
+    padding-bottom: 2em;
+    padding-top: 2em;
     font-size: 4em;
 }
 
 ul {
     list-style-type: none;
-
 }
 
 li {
