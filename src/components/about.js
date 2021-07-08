@@ -1,9 +1,36 @@
 import '../css'
 import React from 'react'
-import { about } from '../content'
+import Modal from './modal'
 import { rali, niki } from '../images';
+import { about, raliT, nikiT } from '../content'
 
 export default class About extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            text: '',
+            video: '',
+            header: '',
+            out: false,
+            showModal: false,
+        };
+
+        this.modal = React.createRef(); // Warning: Cannot update during an existing state
+    }
+
+    openModal(person) {
+        this.setState({
+            showModal: true,
+            text: person.text,
+            video: person.pic,
+            header: person.header,
+        })
+    }
+
+
+
     render() {
         return (
             <div id="aboutScreen" className="screen">
@@ -13,21 +40,38 @@ export default class About extends React.Component {
                     <p className="textCol">{about.text.p2}</p>
                 </div>
                 <div className="people">
-                    <div className="aboutCol">
-                        <img className="photo" src={rali} alt="rali" />
-                        <div className="cen">
-                            <p className="name">Ralitsa Golemanova</p>
-                            <p className="h2sm">{about.text.rali}</p>
-                        </div>
-                    </div>
-                    <div className="aboutCol">
-                        <img className="photo" src={niki} alt="niki" />
-                        <div className="cen">
-                            <p className="name">Nikolay Stefanov</p>
-                            <p className="h2sm">{about.text.niki}</p>
-                        </div>
-                    </div>
+                    <table className="aboutCol" onClick={() => this.openModal(raliT)}>
+                        <tr>
+                            <td>
+                                <img className="photo" src={rali} alt="rali" />
+                            </td>
+                            <td className="">
+                                <p className="name">{raliT.header}</p>
+                                <p className="overflow">{raliT.text.p1}</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table className="aboutCol" onClick={() => this.openModal(nikiT)}>
+                        <tr>
+                            <td>
+                                <img className="photo" src={niki} alt="rali" />
+                            </td>
+                            <td className="">
+                                <p className="name">{nikiT.header}</p>
+                                <p className="overflow">{nikiT.text.p1} </p>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
+
+
+                < Modal ref={this.modal}
+                    out={this.state.out}
+                    text={this.state.text}
+                    video={this.state.video}
+                    header={this.state.header}
+                    showModal={this.state.showModal}
+                    onClick={this.modal?.current?.open()} />
             </div>
         );
     }
