@@ -57,6 +57,7 @@ export default class Modal extends React.Component {
                 <div className="modal-background3 modal-active3" onClick={this.close}>
                     <div className="modal3" onClick={this.preventCLose}>
                         <h2>{this.props.header}</h2> <br />
+                        <p dangerouslySetInnerHTML={{ __html: this.props?.pic }}></p>
                         <p dangerouslySetInnerHTML={{ __html: this.props?.text?.p1 }}></p>
                         <p dangerouslySetInnerHTML={{ __html: this.props?.text?.p2 }} ></p><br />
                         <section className="container">

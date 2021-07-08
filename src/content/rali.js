@@ -6,6 +6,6 @@ export const raliT = {
 
     },
      header: 'Ralitsa Golemanova',
-      pic: `<img class="sm-img" src=${rali} alt='rali'/>`
+      pic: `<img class="photo" src=${rali} alt='rali'/>`
 }
 

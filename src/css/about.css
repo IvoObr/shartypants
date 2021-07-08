@@ -5,6 +5,7 @@
 }
 
 .aboutCol {
+    cursor: pointer;
     margin-left: 5%;
     float: left;
     width: 40%;

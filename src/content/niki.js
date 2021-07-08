@@ -6,6 +6,6 @@ export const nikiT = {
 
     },
     header: 'Nikolay Stefanov',
-    pic: ` <img class="sm-img" src=${niki} alt='niki'/>`
+    pic: ` <img class="photo" src=${niki} alt='niki'/>`
 }
 

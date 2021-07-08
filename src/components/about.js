@@ -11,7 +11,7 @@ export default class About extends React.Component {
 
         this.state = {
             text: '',
-            video: '',
+            pic: '',
             header: '',
             out: false,
             showModal: false,
@@ -24,7 +24,7 @@ export default class About extends React.Component {
         this.setState({
             showModal: true,
             text: person.text,
-            video: person.pic,
+            pic: person.pic,
             header: person.header,
         })
     }
@@ -68,7 +68,7 @@ export default class About extends React.Component {
                 < Modal ref={this.modal}
                     out={this.state.out}
                     text={this.state.text}
-                    video={this.state.video}
+                    pic={this.state.pic}
                     header={this.state.header}
                     showModal={this.state.showModal}
                     onClick={this.modal?.current?.open()} />
