@@ -2,7 +2,7 @@
   "name": "smartypants",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://IvoObr.github.io/smartypants",
+  "homepage": "https://smarty-pants-shooter.com",
   "dependencies": {
     "gh-pages": "^5.0.0",
     "react": "^17.0.2",
