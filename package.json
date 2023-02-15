@@ -2,14 +2,17 @@
   "name": "smartypants",
   "version": "0.1.0",
   "private": true,
-
+  "homepage": "https://IvoObr.github.io/smartypants",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
